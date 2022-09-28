@@ -254,7 +254,7 @@ export async function getServerSideProps() {
     await dbConnect()
 
     /* find all the data in our database */
-    const result = await Pet.find({})
+    const result = await Pet.find({}).sort({_id: -1})
     const pets = result.map((doc) => {
         const pet = doc.toObject()
         pet._id = pet._id.toString()
