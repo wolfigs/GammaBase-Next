@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9f2fbd-49ed-43ed-b04f-07a706e60273" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/[id]/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/[id]/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/pets/[id].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/pets/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.local.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +62,7 @@
       <workItem from="1663816425583" duration="6310000" />
       <workItem from="1663918618850" duration="1996000" />
       <workItem from="1663949289426" duration="6650000" />
+      <workItem from="1664331731630" duration="718000" />
     </task>
     <servers />
   </component>
