@@ -59,56 +59,56 @@ export default withSession((req, res) => {
 // on whether or not a visitor is signed in.
 //
 // https://docs.clerk.dev/frontend/react/signedin-and-signedout
-const Main = () => (
-    <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to your new app</h1>
-        <p className={styles.description}>Sign up for an account to get started</p>
-
-        <div className={styles.cards}>
-            <div className={styles.card}>
-                <SignedIn>
-                    <ClerkFeatures/>
-                </SignedIn>
-                <SignedOut>
-                    <SignupLink/>
-                </SignedOut>
-            </div>
-
-            <div className={styles.card}>
-                <Link href="https://dashboard.clerk.dev">
-                    <a target="_blank" rel="noreferrer" className={styles.cardContent}>
-                        <img src="/icons/settings.svg"/>
-                        <div>
-                            <h3>Configure settings for your app</h3>
-                            <p>
-                                Visit Clerk to manage instances and configure settings for user
-                                management, theme, and more
-                            </p>
-                        </div>
-                        <div className={styles.arrow}>
-                            <img src="/icons/arrow-right.svg"/>
-                        </div>
-                    </a>
-                </Link>
-            </div>
-        </div>
-
-        <APIRequest/>
-
-        <div className={styles.links}>
-            <Link href="https://docs.clerk.dev">
-                <a target="_blank" rel="noreferrer" className={styles.link}>
-                    <span className={styles.linkText}>Read Clerk documentation</span>
-                </a>
-            </Link>
-            <Link href="https://nextjs.org/docs">
-                <a target="_blank" rel="noreferrer" className={styles.link}>
-                    <span className={styles.linkText}>Read NextJS documentation</span>
-                </a>
-            </Link>
-        </div>
-    </main>
-)
+// const Main = () => (
+//     <main className={styles.main}>
+//         <h1 className={styles.title}>Welcome to your new app</h1>
+//         <p className={styles.description}>Sign up for an account to get started</p>
+//
+//         <div className={styles.cards}>
+//             <div className={styles.card}>
+//                 <SignedIn>
+//                     <ClerkFeatures/>
+//                 </SignedIn>
+//                 <SignedOut>
+//                     <SignupLink/>
+//                 </SignedOut>
+//             </div>
+//
+//             <div className={styles.card}>
+//                 <Link href="https://dashboard.clerk.dev">
+//                     <a target="_blank" rel="noreferrer" className={styles.cardContent}>
+//                         <img src="/icons/settings.svg"/>
+//                         <div>
+//                             <h3>Configure settings for your app</h3>
+//                             <p>
+//                                 Visit Clerk to manage instances and configure settings for user
+//                                 management, theme, and more
+//                             </p>
+//                         </div>
+//                         <div className={styles.arrow}>
+//                             <img src="/icons/arrow-right.svg"/>
+//                         </div>
+//                     </a>
+//                 </Link>
+//             </div>
+//         </div>
+//
+//         <APIRequest/>
+//
+//         <div className={styles.links}>
+//             <Link href="https://docs.clerk.dev">
+//                 <a target="_blank" rel="noreferrer" className={styles.link}>
+//                     <span className={styles.linkText}>Read Clerk documentation</span>
+//                 </a>
+//             </Link>
+//             <Link href="https://nextjs.org/docs">
+//                 <a target="_blank" rel="noreferrer" className={styles.link}>
+//                     <span className={styles.linkText}>Read NextJS documentation</span>
+//                 </a>
+//             </Link>
+//         </div>
+//     </main>
+// )
 
 const APIRequest = () => {
     React.useEffect(() => {
@@ -169,10 +169,6 @@ const APIRequest = () => {
             <pre>
         <code className="language-js">{response}</code>
       </pre>
-            <h4>pages/api/getAuthenticatedUserId.js</h4>
-            <pre>
-        <code className="language-js">{apiSample}</code>
-      </pre>
         </div>
     )
 }
@@ -208,50 +204,50 @@ const Home = ({pets}) => (
         <br/>
         <br/>
         {/*<Main>*/}
-            {pets.map((pet) => (
-                <div key={pet._id}>
-                    <div className="card">
-                        <img src={pet.image_url}/>
-                        <h5 className="pet-name">{pet.name}</h5>
-                        <div className="main-content">
-                            <p className="pet-name">{pet.name}</p>
-                            <p className="owner">Owner: {pet.owner_name}</p>
+        <APIRequest/>
+        {pets.map((pet) => (
+            <div key={pet._id}>
+                <div className="card">
+                    <img src={pet.image_url}/>
+                    <h5 className="pet-name">{pet.name}</h5>
+                    <div className="main-content">
+                        <p className="pet-name">{pet.name}</p>
+                        <p className="owner">Owner: {pet.owner_name}</p>
 
-                            {/* Extra Pet Info: Likes and Dislikes */}
-                            <div className="likes info">
-                                <p className="label">Likes</p>
-                                <ul>
-                                    {pet.likes.map((data, index) => (
-                                        <li key={index}>{data} </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="dislikes info">
-                                <p className="label">Dislikes</p>
-                                <ul>
-                                    {pet.dislikes.map((data, index) => (
-                                        <li key={index}>{data} </li>
-                                    ))}
-                                </ul>
-                            </div>
+                        {/* Extra Pet Info: Likes and Dislikes */}
+                        <div className="likes info">
+                            <p className="label">Likes</p>
+                            <ul>
+                                {pet.likes.map((data, index) => (
+                                    <li key={index}>{data} </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="dislikes info">
+                            <p className="label">Dislikes</p>
+                            <ul>
+                                {pet.dislikes.map((data, index) => (
+                                    <li key={index}>{data} </li>
+                                ))}
+                            </ul>
+                        </div>
 
-                            <div className="btn-container">
-                                <Link href="/[id]/edit" as={`/${pet._id}/edit`}>
-                                    <button className="btn edit">Edit</button>
-                                </Link>
-                                <Link href="/[id]" as={`/${pet._id}`}>
-                                    <button className="btn view">View</button>
-                                </Link>
-                            </div>
+                        <div className="btn-container">
+                            <Link href="/[id]/edit" as={`/${pet._id}/edit`}>
+                                <button className="btn edit">Edit</button>
+                            </Link>
+                            <Link href="/[id]" as={`/${pet._id}`}>
+                                <button className="btn view">View</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
-            ))}
+            </div>
+        ))}
         {/*</Main>*/}
         <Footer/>
     </div>
 )
-
 
 /* Retrieves pet(s) data from mongodb database */
 export async function getServerSideProps() {

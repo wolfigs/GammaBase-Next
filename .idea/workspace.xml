@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf9f2fbd-49ed-43ed-b04f-07a706e60273" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -63,7 +67,7 @@
       <workItem from="1663816425583" duration="6310000" />
       <workItem from="1663918618850" duration="1996000" />
       <workItem from="1663949289426" duration="6650000" />
-      <workItem from="1664331731630" duration="1637000" />
+      <workItem from="1664331731630" duration="2255000" />
     </task>
     <servers />
   </component>
