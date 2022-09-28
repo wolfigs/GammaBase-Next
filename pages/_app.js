@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import '../css/style.css'
-import '../css/form.css'
+import '../styles/blocks.css'
 import '../styles/globals.css'
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/nextjs'
 import { useRouter } from 'next/router'
