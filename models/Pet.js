@@ -54,6 +54,10 @@ const PetSchema = new mongoose.Schema({
 
     type: Array,
   },
+  user: {
+    required: true,
+    type: String,
+  },
 })
 
 export default mongoose.models.Pet || mongoose.model('Pet', PetSchema)
